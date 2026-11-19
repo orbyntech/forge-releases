@@ -13,7 +13,7 @@ This repository holds the **official builds** only. Each release has:
 | `SHA256SUMS`, `SHA256SUMS.sig` | Checksums and their Ed25519 signature |
 | raw binaries | Used by Forge's built-in updater |
 
-**→ [Installation guide](INSTALL.md)** · [All releases](https://github.com/Orbyn-Technologies/forge-releases/releases)
+**→ [Installation guide](INSTALL.md)** · [All releases](https://github.com/orbyntech/forge-releases/releases)
 
 Releases marked *Pre-release* are for testing; installed servers only
 update themselves to full releases.
