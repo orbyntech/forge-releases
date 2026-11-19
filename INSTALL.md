@@ -6,15 +6,15 @@ an example configuration. No Node.js, database server or web server needed —
 Forge uses an embedded SQLite database.
 
 Pick the latest version on the
-[releases page](https://github.com/Orbyn-Technologies/forge-releases/releases)
+[releases page](https://github.com/orbyntech/forge-releases/releases)
 and replace `<version>` below with it (for example `0.1.0`).
 
 ## Linux (systemd: Debian, Ubuntu, RHEL, Rocky, Alma, …)
 
 ```sh
 V=<version>
-curl -fLO https://github.com/Orbyn-Technologies/forge-releases/releases/download/v$V/forge-$V-x86_64-linux.tar.gz
-curl -fLO https://github.com/Orbyn-Technologies/forge-releases/releases/download/v$V/SHA256SUMS
+curl -fLO https://github.com/orbyntech/forge-releases/releases/download/v$V/forge-$V-x86_64-linux.tar.gz
+curl -fLO https://github.com/orbyntech/forge-releases/releases/download/v$V/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 tar xzf forge-$V-x86_64-linux.tar.gz
 cd forge-$V-x86_64-linux
@@ -41,7 +41,7 @@ In **PowerShell as Administrator**:
 
 ```powershell
 $V = "<version>"
-Invoke-WebRequest "https://github.com/Orbyn-Technologies/forge-releases/releases/download/v$V/forge-$V-x86_64-windows.zip" -OutFile "forge-$V-x86_64-windows.zip"
+Invoke-WebRequest "https://github.com/orbyntech/forge-releases/releases/download/v$V/forge-$V-x86_64-windows.zip" -OutFile "forge-$V-x86_64-windows.zip"
 Get-FileHash "forge-$V-x86_64-windows.zip" -Algorithm SHA256   # compare with SHA256SUMS
 Expand-Archive "forge-$V-x86_64-windows.zip" -DestinationPath .
 cd "forge-$V-x86_64-windows"
